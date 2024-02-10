@@ -6,7 +6,7 @@ import Form from "@rjsf/antd";
 import { LoadingOutlined } from "@ant-design/icons";
 import _, { isNil } from "lodash";
 import ReactJson from "react-json-view";
-import CosmJsFactory from "src/lib/cosmjs-factory";
+import CosmJsFactory from "../../lib/cosmjs-factory";
 import React from "react";
 import {
   CustomForm,
@@ -16,8 +16,8 @@ import {
   HandleOptions,
   CustomSelect,
   CustomNetwork,
-} from "src/components";
-import { actionType, parseGasLimits, processSchema } from "src/lib/utils";
+} from "../../components";
+import { actionType, parseGasLimits, processSchema } from "../../lib/utils";
 import "./AdvancedInteraction.css";
 
 const antIcon = (

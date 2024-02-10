@@ -2,7 +2,7 @@ import * as ReactDOM from "react-dom";
 import "./polyfill";
 import App from "./App";
 import "./index.css";
-import Keplr from "src/lib/Keplr";
+import Keplr from "../src/lib/Keplr";
 import { ChainStore } from "./stores/chain";
 import { EmbedChainInfos } from "./config";
 
