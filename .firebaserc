@@ -1,0 +1,14 @@
+{
+    "projects": {
+        "default": "gooxionggo"
+    },
+    "targets": {
+        "gooxionggo": {
+            "hosting": {
+                "gooxionggo": [
+                    "gooxionggo"
+                ]
+            }
+        }
+    }
+}

@@ -1,26 +1,78 @@
 {
-  "name": "goxiono",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+  "name": "goxionggo",
+  "displayName": "GoXIONGo",
+  "description": "GoXIONGo",
+  "icon": "logo-128.png",
+  "version": "0.0.1",
+  "publisher": "kamalbuilds",
+  "homepage": ".",
+  "license": "MIT OR Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/kamalbuilds/goxiongo.git"
+  },
+  "engines": {
+    "vscode": "^1.53.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "lint": "eslint . --ext .ts,.tsx",
+    "watch": "tsc -watch -p tsconfig.extension.json",
+    "start": "GENERATE_SOURCEMAP=false react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false react-scripts --max_old_space_size=8192 build"
+  },
+  "devDependencies": {
+    "@cosmjs/launchpad": "^0.26.2",
+    "@cosmjs/proto-signing": "^0.29.1",
+    "@keplr-wallet/common": "^0.11.10",
+    "@keplr-wallet/cosmos": "^0.11.10",
+    "@keplr-wallet/stores": "^0.11.10",
+    "@keplr-wallet/types": "^0.11.10",
+    "@types/lodash": "^4.14.177",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^12.12.0",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "@types/shelljs": "^0.8.9",
+    "@types/vscode": "^1.53.0",
+    "axios": "^0.23.0",
+    "env-cmd": "^10.1.0",
+    "firebase": "^7.13.2",
+    "firebase-tools": "^9.8.0",
+    "mocha": "^9.1.0",
+    "react-error-overlay": "6.0.9",
+    "react-scripts": "^4.0.3",
+    "sass": "^1.43.2",
+    "secretjs": "^0.16.7",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@cosmjs/cosmwasm-stargate": "0.25.0",
+    "@cosmjs/cosmwasm-stargate-1.0": "npm:@cosmjs/cosmwasm-stargate@0.28.13",
+    "@cosmjs/crypto": "^0.29.1",
+    "@cosmjs/math": "^0.29.1",
+    "@cosmjs/proto-signing": "^0.29.1",
+    "@cosmjs/stargate": "^0.27.1",
+    "@rjsf/antd": "^3.2.1",
+    "@rjsf/core": "^3.2.1",
+    "antd": "^4.17.2",
+    "base64-arraybuffer": "^1.0.1",
+    "create-react-app": "^5.0.1",
+    "lodash": "^4.17.21",
+    "mobx-react-lite": "^3.2.2",
+    "react": "^17.0.2",
+    "react-collapse": "^5.1.1",
+    "react-dom": "^17.0.2",
+    "react-dropzone": "^11.4.2",
+    "react-json-view": "^1.21.3",
+    "styled-components": "^5.3.3"
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {

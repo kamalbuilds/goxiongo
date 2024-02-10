@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.tabs .ant-tabs-tab-active {
+  margin: 0px;
+  padding: 4px 15px;
+  background: #524a70 !important;
+  border: none;
+  color: white !important;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Courier";
 }
 
-.App-logo {
-  height: 40vmin;
+.tabs .ant-tabs-tab-active div {
+  color: white !important;
+}
+
+.ant-tabs-nav-operations {
+  display: none !important;
+}
+
+.ant-tabs-nav-list {
+  width: 100%;
+}
+
+.ant-tabs-ink-bar {
+  position: absolute;
+  background: #58485a;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tabs .ant-tabs-tab {
+  padding: 4px 15px;
+  margin: 0px;
+  width: 50%;
+  background: transparent;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Courier";
+  text-align: center;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ant-tabs-nav::before {
+  border-bottom: 1px solid #716972 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tabs {
+  margin-top: 24px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 16px;
+}
+
+.inmem-contract-container {
+  word-break: break-all;
 }
