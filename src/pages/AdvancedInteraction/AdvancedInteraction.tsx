@@ -7,6 +7,7 @@ import { LoadingOutlined } from "@ant-design/icons";
 import _, { isNil } from "lodash";
 import ReactJson from "react-json-view";
 import CosmJsFactory from "src/lib/cosmjs-factory";
+import React from "react";
 import {
   CustomForm,
   CustomInput,
