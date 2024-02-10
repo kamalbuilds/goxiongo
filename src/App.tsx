@@ -25,6 +25,7 @@ import { parseGasLimits, processSchema } from "./lib/utils";
 import DropdownItem from "./components/Collapse";
 import RemoveIcon from "./remove.png";
 import "./App.css";
+import React from "react";
 
 const { TabPane } = Tabs;
 
@@ -480,7 +481,7 @@ const App = () => {
     <div className="app">
       <header className="app-header">
         <img src={logo} className="app-logo" alt="logo" />
-        <h1 className="app-title">COSMWASM IDE</h1>
+        <h1 className="app-title">GO XION GO</h1>
       </header>
 
       <div className="app-divider" />

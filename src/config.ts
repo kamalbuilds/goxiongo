@@ -6,6 +6,50 @@ import { ChainInfoWithExplorer } from "./stores/chain";
  */
 export const EmbedChainInfos: ChainInfoWithExplorer[] = [
   {
+    rpc: "https://rpc.xion-testnet-1.burnt.com",
+    rest: "https://api.xion-testnet-1.burnt.com",
+    chainId: "xion-testnet-1",
+    chainName: "XION Testnet",
+    stakeCurrency: {
+      coinDenom: "XION",
+      coinMinimalDenom: "xion",
+      coinDecimals: 6,
+      coinGeckoId: "xion-token",
+      coinImageUrl: window.location.origin + "/public/assets/tokens/orai.png"
+    },
+    bip44: {
+      coinType: 118
+    },
+    bech32Config: Bech32Address.defaultBech32Config("orai"),
+    currencies: [
+      {
+        coinDenom: "XION",
+        coinMinimalDenom: "xion",
+        coinDecimals: 6,
+        coinGeckoId: "xion-token",
+        coinImageUrl: window.location.origin + "/public/assets/tokens/orai.png"
+      }
+    ],
+    feeCurrencies: [
+      {
+        coinDenom: "XION",
+        coinMinimalDenom: "xion",
+        coinDecimals: 6,
+        coinGeckoId: "xion-token",
+        coinImageUrl: window.location.origin + "/public/assets/tokens/orai.png"
+      }
+    ],
+    gasPriceStep: {
+      low: 0,
+      average: 0.0025,
+      high: 0.004
+    },
+    features: ["stargate", "ibc-transfer", "cosmwasm"],
+    explorerUrlToTx: "https://explorer.burnt.com/xion-testnet-1/txs/${txHash}",
+    cosmwasmVersion: "1.0.0",
+    faucet: ""
+  },
+  {
     rpc: "https://testnet-rpc.orai.io",
     rest: "https://testnet-lcd.orai.io",
     chainId: "Oraichain-testnet",
